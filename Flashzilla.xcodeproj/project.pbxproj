@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F99B4BF728907BA200598B53 /* FlashzillaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BF628907BA200598B53 /* FlashzillaApp.swift */; };
+		F99B4BF928907BA200598B53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BF828907BA200598B53 /* ContentView.swift */; };
+		F99B4BFB28907BA400598B53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99B4BFA28907BA400598B53 /* Assets.xcassets */; };
+		F99B4BFE28907BA400598B53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99B4BFD28907BA400598B53 /* Preview Assets.xcassets */; };
+		F99B4C0828907BA400598B53 /* FlashzillaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4C0728907BA400598B53 /* FlashzillaTests.swift */; };
+		F99B4C1228907BA400598B53 /* FlashzillaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4C1128907BA400598B53 /* FlashzillaUITests.swift */; };
+		F99B4C1428907BA400598B53 /* FlashzillaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4C1328907BA400598B53 /* FlashzillaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F99B4C0428907BA400598B53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F99B4BEB28907BA200598B53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F99B4BF228907BA200598B53;
+			remoteInfo = Flashzilla;
+		};
+		F99B4C0E28907BA400598B53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F99B4BEB28907BA200598B53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F99B4BF228907BA200598B53;
+			remoteInfo = Flashzilla;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F99B4BF328907BA200598B53 /* Flashzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99B4BF628907BA200598B53 /* FlashzillaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaApp.swift; sourceTree = "<group>"; };
+		F99B4BF828907BA200598B53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F99B4BFA28907BA400598B53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F99B4BFD28907BA400598B53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F99B4C0328907BA400598B53 /* FlashzillaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashzillaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99B4C0728907BA400598B53 /* FlashzillaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaTests.swift; sourceTree = "<group>"; };
+		F99B4C0D28907BA400598B53 /* FlashzillaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashzillaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99B4C1128907BA400598B53 /* FlashzillaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaUITests.swift; sourceTree = "<group>"; };
+		F99B4C1328907BA400598B53 /* FlashzillaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F99B4BF028907BA200598B53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99B4C0028907BA400598B53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99B4C0A28907BA400598B53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F99B4BEA28907BA200598B53 = {
+			isa = PBXGroup;
+			children = (
+				F99B4BF528907BA200598B53 /* Flashzilla */,
+				F99B4C0628907BA400598B53 /* FlashzillaTests */,
+				F99B4C1028907BA400598B53 /* FlashzillaUITests */,
+				F99B4BF428907BA200598B53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F99B4BF428907BA200598B53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F99B4BF328907BA200598B53 /* Flashzilla.app */,
+				F99B4C0328907BA400598B53 /* FlashzillaTests.xctest */,
+				F99B4C0D28907BA400598B53 /* FlashzillaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F99B4BF528907BA200598B53 /* Flashzilla */ = {
+			isa = PBXGroup;
+			children = (
+				F99B4BF628907BA200598B53 /* FlashzillaApp.swift */,
+				F99B4BF828907BA200598B53 /* ContentView.swift */,
+				F99B4BFA28907BA400598B53 /* Assets.xcassets */,
+				F99B4BFC28907BA400598B53 /* Preview Content */,
+			);
+			path = Flashzilla;
+			sourceTree = "<group>";
+		};
+		F99B4BFC28907BA400598B53 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F99B4BFD28907BA400598B53 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F99B4C0628907BA400598B53 /* FlashzillaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F99B4C0728907BA400598B53 /* FlashzillaTests.swift */,
+			);
+			path = FlashzillaTests;
+			sourceTree = "<group>";
+		};
+		F99B4C1028907BA400598B53 /* FlashzillaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F99B4C1128907BA400598B53 /* FlashzillaUITests.swift */,
+				F99B4C1328907BA400598B53 /* FlashzillaUITestsLaunchTests.swift */,
+			);
+			path = FlashzillaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F99B4BF228907BA200598B53 /* Flashzilla */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F99B4C1728907BA400598B53 /* Build configuration list for PBXNativeTarget "Flashzilla" */;
+			buildPhases = (
+				F99B4BEF28907BA200598B53 /* Sources */,
+				F99B4BF028907BA200598B53 /* Frameworks */,
+				F99B4BF128907BA200598B53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flashzilla;
+			productName = Flashzilla;
+			productReference = F99B4BF328907BA200598B53 /* Flashzilla.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F99B4C0228907BA400598B53 /* FlashzillaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F99B4C1A28907BA400598B53 /* Build configuration list for PBXNativeTarget "FlashzillaTests" */;
+			buildPhases = (
+				F99B4BFF28907BA400598B53 /* Sources */,
+				F99B4C0028907BA400598B53 /* Frameworks */,
+				F99B4C0128907BA400598B53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F99B4C0528907BA400598B53 /* PBXTargetDependency */,
+			);
+			name = FlashzillaTests;
+			productName = FlashzillaTests;
+			productReference = F99B4C0328907BA400598B53 /* FlashzillaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F99B4C0C28907BA400598B53 /* FlashzillaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F99B4C1D28907BA400598B53 /* Build configuration list for PBXNativeTarget "FlashzillaUITests" */;
+			buildPhases = (
+				F99B4C0928907BA400598B53 /* Sources */,
+				F99B4C0A28907BA400598B53 /* Frameworks */,
+				F99B4C0B28907BA400598B53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F99B4C0F28907BA400598B53 /* PBXTargetDependency */,
+			);
+			name = FlashzillaUITests;
+			productName = FlashzillaUITests;
+			productReference = F99B4C0D28907BA400598B53 /* FlashzillaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F99B4BEB28907BA200598B53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					F99B4BF228907BA200598B53 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					F99B4C0228907BA400598B53 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = F99B4BF228907BA200598B53;
+					};
+					F99B4C0C28907BA400598B53 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = F99B4BF228907BA200598B53;
+					};
+				};
+			};
+			buildConfigurationList = F99B4BEE28907BA200598B53 /* Build configuration list for PBXProject "Flashzilla" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F99B4BEA28907BA200598B53;
+			productRefGroup = F99B4BF428907BA200598B53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F99B4BF228907BA200598B53 /* Flashzilla */,
+				F99B4C0228907BA400598B53 /* FlashzillaTests */,
+				F99B4C0C28907BA400598B53 /* FlashzillaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F99B4BF128907BA200598B53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99B4BFE28907BA400598B53 /* Preview Assets.xcassets in Resources */,
+				F99B4BFB28907BA400598B53 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99B4C0128907BA400598B53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99B4C0B28907BA400598B53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F99B4BEF28907BA200598B53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99B4BF928907BA200598B53 /* ContentView.swift in Sources */,
+				F99B4BF728907BA200598B53 /* FlashzillaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99B4BFF28907BA400598B53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99B4C0828907BA400598B53 /* FlashzillaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99B4C0928907BA400598B53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99B4C1428907BA400598B53 /* FlashzillaUITestsLaunchTests.swift in Sources */,
+				F99B4C1228907BA400598B53 /* FlashzillaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F99B4C0528907BA400598B53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F99B4BF228907BA200598B53 /* Flashzilla */;
+			targetProxy = F99B4C0428907BA400598B53 /* PBXContainerItemProxy */;
+		};
+		F99B4C0F28907BA400598B53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F99B4BF228907BA200598B53 /* Flashzilla */;
+			targetProxy = F99B4C0E28907BA400598B53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F99B4C1528907BA400598B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F99B4C1628907BA400598B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F99B4C1828907BA400598B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Flashzilla/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takasurazeem.Flashzilla;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F99B4C1928907BA400598B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Flashzilla/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takasurazeem.Flashzilla;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F99B4C1B28907BA400598B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takasurazeem.FlashzillaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flashzilla.app/Flashzilla";
+			};
+			name = Debug;
+		};
+		F99B4C1C28907BA400598B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takasurazeem.FlashzillaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flashzilla.app/Flashzilla";
+			};
+			name = Release;
+		};
+		F99B4C1E28907BA400598B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takasurazeem.FlashzillaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flashzilla;
+			};
+			name = Debug;
+		};
+		F99B4C1F28907BA400598B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takasurazeem.FlashzillaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flashzilla;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F99B4BEE28907BA200598B53 /* Build configuration list for PBXProject "Flashzilla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99B4C1528907BA400598B53 /* Debug */,
+				F99B4C1628907BA400598B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F99B4C1728907BA400598B53 /* Build configuration list for PBXNativeTarget "Flashzilla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99B4C1828907BA400598B53 /* Debug */,
+				F99B4C1928907BA400598B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F99B4C1A28907BA400598B53 /* Build configuration list for PBXNativeTarget "FlashzillaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99B4C1B28907BA400598B53 /* Debug */,
+				F99B4C1C28907BA400598B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F99B4C1D28907BA400598B53 /* Build configuration list for PBXNativeTarget "FlashzillaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99B4C1E28907BA400598B53 /* Debug */,
+				F99B4C1F28907BA400598B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F99B4BEB28907BA200598B53 /* Project object */;
+}
