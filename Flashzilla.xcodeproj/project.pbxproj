@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F92714092891901600216BB5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92714082891901600216BB5 /* Card.swift */; };
 		F927AE26289136F5002CFE00 /* DragGestureWithLongPressContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927AE25289136F5002CFE00 /* DragGestureWithLongPressContentView.swift */; };
 		F927AE2928913788002CFE00 /* VibrationsAndHapticsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927AE2828913788002CFE00 /* VibrationsAndHapticsContentView.swift */; };
 		F927AE2B28914DBA002CFE00 /* HitTestingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927AE2A28914DBA002CFE00 /* HitTestingContentView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F92714082891901600216BB5 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Flashzilla/Card.swift; sourceTree = "<group>"; };
 		F927AE25289136F5002CFE00 /* DragGestureWithLongPressContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureWithLongPressContentView.swift; sourceTree = "<group>"; };
 		F927AE2828913788002CFE00 /* VibrationsAndHapticsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationsAndHapticsContentView.swift; sourceTree = "<group>"; };
 		F927AE2A28914DBA002CFE00 /* HitTestingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitTestingContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		F99B4BEA28907BA200598B53 = {
 			isa = PBXGroup;
 			children = (
+				F92714082891901600216BB5 /* Card.swift */,
 				F99B4BF528907BA200598B53 /* Flashzilla */,
 				F99B4C0628907BA400598B53 /* FlashzillaTests */,
 				F99B4C1028907BA400598B53 /* FlashzillaUITests */,
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F927AE2D28915ACB002CFE00 /* TimerContentView.swift in Sources */,
+				F92714092891901600216BB5 /* Card.swift in Sources */,
 				F927AE2B28914DBA002CFE00 /* HitTestingContentView.swift in Sources */,
 				F927AE2F28916F79002CFE00 /* AppGoesBackgroundContentView.swift in Sources */,
 				F99B4BF928907BA200598B53 /* ContentView.swift in Sources */,
@@ -456,7 +460,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,7 +489,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
