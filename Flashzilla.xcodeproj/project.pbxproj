@@ -12,6 +12,7 @@
 		F927AE2B28914DBA002CFE00 /* HitTestingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927AE2A28914DBA002CFE00 /* HitTestingContentView.swift */; };
 		F927AE2D28915ACB002CFE00 /* TimerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927AE2C28915ACB002CFE00 /* TimerContentView.swift */; };
 		F927AE2F28916F79002CFE00 /* AppGoesBackgroundContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927AE2E28916F79002CFE00 /* AppGoesBackgroundContentView.swift */; };
+		F927AE3128917255002CFE00 /* SpecificAccessibilitySettingsContentVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927AE3028917255002CFE00 /* SpecificAccessibilitySettingsContentVIew.swift */; };
 		F99B4BF728907BA200598B53 /* FlashzillaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BF628907BA200598B53 /* FlashzillaApp.swift */; };
 		F99B4BF928907BA200598B53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BF828907BA200598B53 /* ContentView.swift */; };
 		F99B4BFB28907BA400598B53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99B4BFA28907BA400598B53 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		F927AE2A28914DBA002CFE00 /* HitTestingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitTestingContentView.swift; sourceTree = "<group>"; };
 		F927AE2C28915ACB002CFE00 /* TimerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerContentView.swift; sourceTree = "<group>"; };
 		F927AE2E28916F79002CFE00 /* AppGoesBackgroundContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGoesBackgroundContentView.swift; sourceTree = "<group>"; };
+		F927AE3028917255002CFE00 /* SpecificAccessibilitySettingsContentVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificAccessibilitySettingsContentVIew.swift; sourceTree = "<group>"; };
 		F99B4BF328907BA200598B53 /* Flashzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99B4BF628907BA200598B53 /* FlashzillaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaApp.swift; sourceTree = "<group>"; };
 		F99B4BF828907BA200598B53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				F927AE2A28914DBA002CFE00 /* HitTestingContentView.swift */,
 				F927AE2C28915ACB002CFE00 /* TimerContentView.swift */,
 				F927AE2E28916F79002CFE00 /* AppGoesBackgroundContentView.swift */,
+				F927AE3028917255002CFE00 /* SpecificAccessibilitySettingsContentVIew.swift */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				F99B4BF928907BA200598B53 /* ContentView.swift in Sources */,
 				F99B4BF728907BA200598B53 /* FlashzillaApp.swift in Sources */,
 				F927AE2928913788002CFE00 /* VibrationsAndHapticsContentView.swift in Sources */,
+				F927AE3128917255002CFE00 /* SpecificAccessibilitySettingsContentVIew.swift in Sources */,
 				F927AE26289136F5002CFE00 /* DragGestureWithLongPressContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
