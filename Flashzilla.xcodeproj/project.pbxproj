@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F927AE26289136F5002CFE00 /* DragGestureWithLongPressContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927AE25289136F5002CFE00 /* DragGestureWithLongPressContentView.swift */; };
 		F99B4BF728907BA200598B53 /* FlashzillaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BF628907BA200598B53 /* FlashzillaApp.swift */; };
 		F99B4BF928907BA200598B53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BF828907BA200598B53 /* ContentView.swift */; };
 		F99B4BFB28907BA400598B53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99B4BFA28907BA400598B53 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F927AE25289136F5002CFE00 /* DragGestureWithLongPressContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureWithLongPressContentView.swift; sourceTree = "<group>"; };
 		F99B4BF328907BA200598B53 /* Flashzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99B4BF628907BA200598B53 /* FlashzillaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaApp.swift; sourceTree = "<group>"; };
 		F99B4BF828907BA200598B53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F927AE27289136FD002CFE00 /* Learning */ = {
+			isa = PBXGroup;
+			children = (
+				F927AE25289136F5002CFE00 /* DragGestureWithLongPressContentView.swift */,
+			);
+			path = Learning;
+			sourceTree = "<group>";
+		};
 		F99B4BEA28907BA200598B53 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +104,7 @@
 		F99B4BF528907BA200598B53 /* Flashzilla */ = {
 			isa = PBXGroup;
 			children = (
+				F927AE27289136FD002CFE00 /* Learning */,
 				F99B4BF628907BA200598B53 /* FlashzillaApp.swift */,
 				F99B4BF828907BA200598B53 /* ContentView.swift */,
 				F99B4BFA28907BA400598B53 /* Assets.xcassets */,
@@ -259,6 +270,7 @@
 			files = (
 				F99B4BF928907BA200598B53 /* ContentView.swift in Sources */,
 				F99B4BF728907BA200598B53 /* FlashzillaApp.swift in Sources */,
+				F927AE26289136F5002CFE00 /* DragGestureWithLongPressContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
