@@ -12,7 +12,7 @@ struct ContentView: View {
     @Environment(\.scenePhase) var scenePhase
     
     @State private var isActive = true
-    @State private var cards = [Card](repeating: Card.example, count: 10)
+    @State private var cards: [Card] = Array(repeating: Card.example, count: 5)
     
     @State private var timeRemaining = 100
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -30,7 +30,6 @@ struct ContentView: View {
                     .padding(.vertical, 5)
                     .background(.black.opacity(0.75))
                     .clipShape(Capsule())
-                
                 ZStack {
                     ForEach(0..<cards.count, id: \.self) { index in
                         CardView(card: cards[index]) {
@@ -40,6 +39,14 @@ struct ContentView: View {
                         }
                         .stacked(at: index, in: cards.count)
                     }
+                }
+                .allowsHitTesting(timeRemaining > 0)
+                if cards.isEmpty {
+                    Button("Start Again", action: resetCards)
+                        .padding()
+                        .background(.white)
+                        .foregroundColor(.black)
+                        .clipShape(Capsule())
                 }
             }
             if differentiateWithoutColor {
@@ -70,7 +77,7 @@ struct ContentView: View {
             }
         }
         .onChange(of: scenePhase) { scenePhase in
-            if scenePhase == .active {
+            if scenePhase == .active, !cards.isEmpty {
                 isActive = true
             } else {
                 isActive = false
@@ -80,6 +87,15 @@ struct ContentView: View {
     
     func removeCard(at index: Int) {
         cards.remove(at: index)
+        if cards.isEmpty {
+            isActive = false
+        }
+    }
+    
+    func resetCards() {
+        cards = Array(repeating: Card.example, count: 10)
+        timeRemaining = 100
+        isActive = true
     }
 }
 
