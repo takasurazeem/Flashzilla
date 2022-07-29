@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F92714092891901600216BB5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92714082891901600216BB5 /* Card.swift */; };
 		F927140B2891926600216BB5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927140A2891926600216BB5 /* CardView.swift */; };
+		F927140D2893FDAE00216BB5 /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927140C2893FDAD00216BB5 /* EditCards.swift */; };
 		F927AE26289136F5002CFE00 /* DragGestureWithLongPressContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927AE25289136F5002CFE00 /* DragGestureWithLongPressContentView.swift */; };
 		F927AE2928913788002CFE00 /* VibrationsAndHapticsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927AE2828913788002CFE00 /* VibrationsAndHapticsContentView.swift */; };
 		F927AE2B28914DBA002CFE00 /* HitTestingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927AE2A28914DBA002CFE00 /* HitTestingContentView.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		F92714082891901600216BB5 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		F927140A2891926600216BB5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F927140C2893FDAD00216BB5 /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
 		F927AE25289136F5002CFE00 /* DragGestureWithLongPressContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureWithLongPressContentView.swift; sourceTree = "<group>"; };
 		F927AE2828913788002CFE00 /* VibrationsAndHapticsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationsAndHapticsContentView.swift; sourceTree = "<group>"; };
 		F927AE2A28914DBA002CFE00 /* HitTestingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitTestingContentView.swift; sourceTree = "<group>"; };
@@ -92,10 +94,10 @@
 			children = (
 				F927AE25289136F5002CFE00 /* DragGestureWithLongPressContentView.swift */,
 				F927AE2828913788002CFE00 /* VibrationsAndHapticsContentView.swift */,
-				F927AE2A28914DBA002CFE00 /* HitTestingContentView.swift */,
 				F927AE2C28915ACB002CFE00 /* TimerContentView.swift */,
 				F927AE2E28916F79002CFE00 /* AppGoesBackgroundContentView.swift */,
 				F927AE3028917255002CFE00 /* SpecificAccessibilitySettingsContentVIew.swift */,
+				F927AE2A28914DBA002CFE00 /* HitTestingContentView.swift */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
@@ -128,6 +130,7 @@
 				F99B4BF828907BA200598B53 /* ContentView.swift */,
 				F92714082891901600216BB5 /* Card.swift */,
 				F927140A2891926600216BB5 /* CardView.swift */,
+				F927140C2893FDAD00216BB5 /* EditCards.swift */,
 				F99B4BFA28907BA400598B53 /* Assets.xcassets */,
 				F99B4BFC28907BA400598B53 /* Preview Content */,
 			);
@@ -293,6 +296,7 @@
 				F92714092891901600216BB5 /* Card.swift in Sources */,
 				F927AE2B28914DBA002CFE00 /* HitTestingContentView.swift in Sources */,
 				F927AE2F28916F79002CFE00 /* AppGoesBackgroundContentView.swift in Sources */,
+				F927140D2893FDAE00216BB5 /* EditCards.swift in Sources */,
 				F927140B2891926600216BB5 /* CardView.swift in Sources */,
 				F99B4BF928907BA200598B53 /* ContentView.swift in Sources */,
 				F99B4BF728907BA200598B53 /* FlashzillaApp.swift in Sources */,
