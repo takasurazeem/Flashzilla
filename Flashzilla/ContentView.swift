@@ -32,16 +32,17 @@ struct ContentView: View {
                     .padding(.vertical, 5)
                     .background(.black.opacity(0.75))
                     .clipShape(Capsule())
+                    
                 ZStack {
-                    ForEach(0..<cards.count, id: \.self) { index in
-                        CardView(card: cards[index]) {
+                    ForEach(Array(cards.enumerated()), id: \.element) { item in
+                        CardView(card: item.element) { shouldRemove in
                             withAnimation {
-                                removeCard(at: index)
+                                removeCard(at: item.offset, shouldRemove: shouldRemove)
                             }
                         }
-                        .stacked(at: index, in: cards.count)
-                        .allowsHitTesting(index == cards.count - 1)
-                        .accessibilityHidden(index < cards.count - 1)
+                        .stacked(at: item.offset, in: cards.count)
+                        .allowsHitTesting(item.offset == cards.count - 1)
+                        .accessibilityHidden(item.offset < cards.count - 1)
                     }
                 }
                 .allowsHitTesting(timeRemaining > 0)
@@ -81,7 +82,7 @@ struct ContentView: View {
                     HStack {
                         Button {
                             withAnimation {
-                                removeCard(at: cards.count - 1)
+                                removeCard(at: cards.count - 1, shouldRemove: true)
                             }
                         } label: {
                             Image(systemName: "xmark.circle")
@@ -131,9 +132,14 @@ struct ContentView: View {
         // Important: This approach only works because EditCards has an initializer that accepts no parameters. If you need to pass in specific values you need to use the closure-based approach instead.
     }
     
-    func removeCard(at index: Int) {
+    func removeCard(at index: Int, shouldRemove: Bool = false) {
         guard index >= 0 else { return }
-        cards.remove(at: index)
+        if shouldRemove {
+            cards.remove(at: index)
+        } else {
+//            cards = cards.shuffled()
+            cards.move(fromOffsets: IndexSet(integer: index), toOffset: 0)
+        }
         if cards.isEmpty {
             isActive = false
         }

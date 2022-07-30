@@ -12,7 +12,7 @@ struct CardView: View {
     @Environment(\.accessibilityVoiceOverEnabled) var voiceOverEnabled
     
     let card: Card
-    var removal: (() -> Void)? = nil
+    var removal: ((Bool) -> Void)? = nil
     
     @State private var isShowingAnswer = false
     @State private var offset = CGSize.zero
@@ -35,10 +35,6 @@ struct CardView: View {
                         .fill(offset.width == 0 ? .white : offset.width > 0 ? .green : .red)
                 )
                 .shadow(radius: 10)
-                .onTapGesture {
-                    isShowingAnswer.toggle()
-                }
-                .animation(.spring(), value: offset)
             
             VStack {
                 if voiceOverEnabled {
@@ -76,16 +72,26 @@ struct CardView: View {
                         if offset.width > 0 {
                             // feedback.notificationOccurred(.success)
                             // optional /\ \/
-                            // TODO: - modify it to have a button to enable/disable haptics for success.
+                            // TODO: - Modify it to have a button to enable/disable haptics for success.
+                            // SUCCESS Remove the card
+                            removal?(true)
                         } else {
                             feedback.notificationOccurred(.error)
+                            removal?(false)
+                            offset = .zero
+                            if isShowingAnswer {
+                                isShowingAnswer = false
+                            }
                         }
-                        removal?()
                     } else {
                         offset = .zero
                     }
                 }
         )
+        .onTapGesture {
+            isShowingAnswer.toggle()
+        }
+        .animation(.spring(), value: offset)
     }
 }
 
