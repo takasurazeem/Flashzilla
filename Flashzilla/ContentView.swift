@@ -14,10 +14,11 @@ struct ContentView: View {
 
     @State private var showingEditScreen = false
     @State private var isActive = true
-    @State private var cards: [Card] = []
     
     @State private var timeRemaining = 100
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
+    @StateObject var model = Cards()
     
     var body: some View {
         ZStack {
@@ -34,19 +35,19 @@ struct ContentView: View {
                     .clipShape(Capsule())
                     
                 ZStack {
-                    ForEach(Array(cards.enumerated()), id: \.element) { item in
+                    ForEach(Array(model.cards.enumerated()), id: \.element) { item in
                         CardView(card: item.element) { shouldRemove in
                             withAnimation {
                                 removeCard(at: item.offset, shouldRemove: shouldRemove)
                             }
                         }
-                        .stacked(at: item.offset, in: cards.count)
-                        .allowsHitTesting(item.offset == cards.count - 1)
-                        .accessibilityHidden(item.offset < cards.count - 1)
+                        .stacked(at: item.offset, in: model.cards.count)
+                        .allowsHitTesting(item.offset == model.cards.count - 1)
+                        .accessibilityHidden(item.offset < model.cards.count - 1)
                     }
                 }
                 .allowsHitTesting(timeRemaining > 0)
-                if cards.isEmpty {
+                if model.cards.isEmpty {
                     Button("Start Again", action: resetCards)
                         .padding()
                         .background(.white)
@@ -82,7 +83,7 @@ struct ContentView: View {
                     HStack {
                         Button {
                             withAnimation {
-                                removeCard(at: cards.count - 1, shouldRemove: true)
+                                removeCard(at: model.cards.count - 1, shouldRemove: true)
                             }
                         } label: {
                             Image(systemName: "xmark.circle")
@@ -97,7 +98,7 @@ struct ContentView: View {
                         
                         Button {
                             withAnimation {
-                                removeCard(at: cards.count - 1)
+                                removeCard(at: model.cards.count - 1)
                             }
                         } label: {
                             Image(systemName: "checkmark.circle")
@@ -121,26 +122,27 @@ struct ContentView: View {
             }
         }
         .onChange(of: scenePhase) { scenePhase in
-            if scenePhase == .active, !cards.isEmpty {
+            if scenePhase == .active, !model.cards.isEmpty {
                 isActive = true
             } else {
                 isActive = false
             }
         }
         .onAppear(perform: resetCards)
-        .sheet(isPresented: $showingEditScreen, onDismiss: resetCards, content: EditCards.init)
-        // Important: This approach only works because EditCards has an initializer that accepts no parameters. If you need to pass in specific values you need to use the closure-based approach instead.
+        .sheet(isPresented: $showingEditScreen, onDismiss: resetCards) {
+            EditCards(model: model)
+        }
     }
     
     func removeCard(at index: Int, shouldRemove: Bool = false) {
         guard index >= 0 else { return }
         if shouldRemove {
-            cards.remove(at: index)
+            model.cards.remove(at: index)
         } else {
 //            cards = cards.shuffled()
-            cards.move(fromOffsets: IndexSet(integer: index), toOffset: 0)
+            model.cards.move(fromOffsets: IndexSet(integer: index), toOffset: 0)
         }
-        if cards.isEmpty {
+        if model.cards.isEmpty {
             isActive = false
         }
     }
@@ -148,15 +150,7 @@ struct ContentView: View {
     func resetCards() {
         timeRemaining = 100
         isActive = true
-        loadData()
-    }
-
-    private func loadData() {
-        if let data = UserDefaults.standard.data(forKey: "Cards") {
-            if let decoded = try? JSONDecoder().decode([Card].self, from: data) {
-                cards = decoded
-            }
-        }
+        model.loadData()
     }
 }
 

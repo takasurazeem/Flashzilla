@@ -23,6 +23,8 @@
 		F99B4C0828907BA400598B53 /* FlashzillaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4C0728907BA400598B53 /* FlashzillaTests.swift */; };
 		F99B4C1228907BA400598B53 /* FlashzillaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4C1128907BA400598B53 /* FlashzillaUITests.swift */; };
 		F99B4C1428907BA400598B53 /* FlashzillaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4C1328907BA400598B53 /* FlashzillaUITestsLaunchTests.swift */; };
+		F9E4336F28959FC000E4113A /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E4336E28959FC000E4113A /* FileManager+Extension.swift */; };
+		F9E433712895A29C00E4113A /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E433702895A29C00E4113A /* Cards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		F99B4C0D28907BA400598B53 /* FlashzillaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashzillaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99B4C1128907BA400598B53 /* FlashzillaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaUITests.swift; sourceTree = "<group>"; };
 		F99B4C1328907BA400598B53 /* FlashzillaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F9E4336E28959FC000E4113A /* FileManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		F9E433702895A29C00E4113A /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 				F927AE2E28916F79002CFE00 /* AppGoesBackgroundContentView.swift */,
 				F927AE3028917255002CFE00 /* SpecificAccessibilitySettingsContentVIew.swift */,
 				F927AE2A28914DBA002CFE00 /* HitTestingContentView.swift */,
+				F9E433702895A29C00E4113A /* Cards.swift */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				F92714082891901600216BB5 /* Card.swift */,
 				F927140A2891926600216BB5 /* CardView.swift */,
 				F927140C2893FDAD00216BB5 /* EditCards.swift */,
+				F9E4336E28959FC000E4113A /* FileManager+Extension.swift */,
 				F99B4BFA28907BA400598B53 /* Assets.xcassets */,
 				F99B4BFC28907BA400598B53 /* Preview Content */,
 			);
@@ -293,10 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F927AE2D28915ACB002CFE00 /* TimerContentView.swift in Sources */,
+				F9E433712895A29C00E4113A /* Cards.swift in Sources */,
 				F92714092891901600216BB5 /* Card.swift in Sources */,
 				F927AE2B28914DBA002CFE00 /* HitTestingContentView.swift in Sources */,
 				F927AE2F28916F79002CFE00 /* AppGoesBackgroundContentView.swift in Sources */,
 				F927140D2893FDAE00216BB5 /* EditCards.swift in Sources */,
+				F9E4336F28959FC000E4113A /* FileManager+Extension.swift in Sources */,
 				F927140B2891926600216BB5 /* CardView.swift in Sources */,
 				F99B4BF928907BA200598B53 /* ContentView.swift in Sources */,
 				F99B4BF728907BA200598B53 /* FlashzillaApp.swift in Sources */,

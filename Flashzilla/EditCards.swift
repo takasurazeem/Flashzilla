@@ -9,9 +9,14 @@ import SwiftUI
 
 struct EditCards: View {
     @Environment(\.dismiss) var dismiss
-    @State private var cards: [Card] = []
     @State private var newPrompt = ""
     @State private var newAnswer = ""
+    
+    @StateObject private var model: Cards
+    
+    init(model: Cards) {
+        _model = StateObject(wrappedValue: model)
+    }
     
     var body: some View {
         NavigationView {
@@ -23,11 +28,11 @@ struct EditCards: View {
                 }
                 
                 Section {
-                    ForEach(0..<cards.count, id: \.self) { index in
+                    ForEach(0..<model.cards.count, id: \.self) { index in
                         VStack(alignment: .leading) {
-                            Text(cards[index].prompt)
+                            Text(model.cards[index].prompt)
                                 .font(.headline)
-                            Text(cards[index].answer)
+                            Text(model.cards[index].answer)
                                 .foregroundColor(.secondary)
                         }
                     }
@@ -39,21 +44,7 @@ struct EditCards: View {
                 Button("Done", action: done)
             }
             .listStyle(.grouped)
-            .onAppear(perform: loadData)
-        }
-    }
-    
-    func loadData() {
-        if let data = UserDefaults.standard.data(forKey: "Cards") {
-            if let decoded = try? JSONDecoder().decode([Card].self, from: data) {
-                cards = decoded
-            }
-        }
-    }
-    
-    func saveData() {
-        if let data = try? JSONEncoder().encode(cards) {
-            UserDefaults.standard.set(data, forKey: "Cards")
+            .onAppear(perform: model.loadData)
         }
     }
     
@@ -67,22 +58,22 @@ struct EditCards: View {
         guard trimmedPrompt.isEmpty == false && trimmedAnswer.isEmpty == false else { return }
         
         let card = Card(prompt: trimmedPrompt, answer: trimmedAnswer)
-        cards.insert(card, at: 0)
-        saveData()
+        model.cards.insert(card, at: 0)
+        model.saveData()
         // Clear Text Fields
         newPrompt = ""
         newAnswer = ""
     }
     
     func removeCards(at offsets: IndexSet) {
-        cards.remove(atOffsets: offsets)
-        saveData()
+        model.cards.remove(atOffsets: offsets)
+        model.saveData()
     }
 }
 
 struct EditCards_Previews: PreviewProvider {
     static var previews: some View {
-        EditCards()
+        EditCards(model: Cards())
             .previewInterfaceOrientation(.landscapeRight)
     }
 }
